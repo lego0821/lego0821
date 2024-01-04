@@ -2,21 +2,31 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="navigation.css">
+        <link rel="stylesheet" href="index.css">
+        <title>lego0821</title>
+        <style>
+            #myName{
+                font-weight: normal;
+                font-size: 50px;
+                color: black;
+            }
+            #myName::before{
+                content: url(lego0821.png);
+                vertical-align: text-top;
+            }
+        </style>
     </head>
     <body>
         <nav>
             <ul>
-                <li><a href="#" class="logo"><img src="lego0821.png" class="logoImg"></a></li>
+                <li><a href="#" class="logo"><img src="lego0821.png" class="logoImg" title="トップへ"></a></li>
                 <li><a href="#">作品</a></li>
-                <li><a href="#">通知</li>
+                <li><a href="#">通知</a></li>
             </ul>
         </nav>
         <br>
         <br>
         <br>
-        <h1 style="color: black">
-            header1.
-        </h1>
+        <h1 id="myName">lego0821</h1>
     </body>
 </html>
