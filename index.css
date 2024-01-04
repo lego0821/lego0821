@@ -49,3 +49,6 @@ li{
 html{
     scroll-behavior: smooth;
 }
+#navigations{
+    display: flex;
+}
