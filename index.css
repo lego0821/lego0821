@@ -52,4 +52,5 @@ html{
 #navigations{
     display: flex;
     text-align: center;
+    height: 90px;
 }
