@@ -25,7 +25,7 @@ nav{
 .logoImg:hover{
     filter: brightness(0.9);
 }
-a{
+.navs{
     display: block;
     text-decoration: none;
     color: white;
