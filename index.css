@@ -54,3 +54,6 @@ html{
     text-align: center;
     height: 90px;
 }
+a:visited{
+    color: blue;
+}
