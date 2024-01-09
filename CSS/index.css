@@ -75,4 +75,6 @@ a:visited{
     height: 100px;
     width: 100px;
     text-decoration: none;
+    text-align: center;
+    vertical-align: center;
 }
