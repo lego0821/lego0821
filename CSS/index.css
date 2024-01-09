@@ -54,9 +54,15 @@ html{
     text-align: center;
     height: 90px;
 }
-a:visited{
+a.navs:visited{
     color: white;
 }
-a{
+a.navs{
     text-decorations: none;
+}
+a{
+    color: blue;
+}
+a:visited{
+    color: blue;
 }
