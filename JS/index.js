@@ -1,5 +1,5 @@
 window.addEventListener('scroll',function(){
-  const elm = document.getELementById('top');
+  const elm = document.getElementById('top');
   const scroll = window.pageYOffset;
   if(scroll > 150){
     elm.style.opacity = '1';
