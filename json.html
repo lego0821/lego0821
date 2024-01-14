@@ -20,11 +20,12 @@
     <script>
       'use strict';
       $(document).ready(function(){
+        //ファイルの読み込み
         $.ajax({url: 'projects.json',dataType: 'json'})
-        .done(function (data){
+        .done(function(data){
           console.log(data);
         })
-        .fail(function (data){
+        .fail(function(){
           window.alert('読み込みエラー');
         });
       });
