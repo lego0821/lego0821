@@ -83,3 +83,6 @@ a:visited{
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+.detail{
+    font-size: 13px;
+}
