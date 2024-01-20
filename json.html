@@ -21,7 +21,7 @@
       'use strict';
       $(document).ready(function(){
         //ファイルの読み込み
-        $.ajax({url: 'https://lego0821.github.io/lego0821/projects.json'})
+        $.ajax({url: 'https://lego0821.github.io/lego0821/projects.json', dataType: 'json'})
         .done(function(data){
           console.log(data);
         })
