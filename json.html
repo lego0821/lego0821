@@ -28,6 +28,7 @@
           console.log(data);
           List = data;
           document.getElementById('project').addEventListener('change',function(){
+            console.log(List[this.value][document.getElementById('detail').value]);
             document.getElementById('output').textContent = List[this.value][document.getElementById('detail').value];
           },false)
         })
