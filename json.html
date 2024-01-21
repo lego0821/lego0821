@@ -4,12 +4,12 @@
     <meta charset='utf-8'>
   </head>
   <body>
-    <select>
-      <option value='online'>オンライン広場</option>
-      <option value='steal2'>怪盗ゲーム　第2話</option>
-      <option value='arrow'>弓矢ゲーム</option>
+    <select id='project'>
+      <option value='0'>オンライン広場</option>
+      <option value='1'>怪盗ゲーム　第2話</option>
+      <option value='2'>弓矢ゲーム</option>
     </select>
-    <select>
+    <select id='detail'>
       <option value='projectId'>プロジェクトid</option>
       <option value='detail'>概要</option>
       <option value='HowToUse'>使い方</option>
@@ -19,11 +19,17 @@
     <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
     <script>
       'use strict';
+
+      let List;
       $(document).ready(function(){
         //ファイルの読み込み
         $.ajax({url: 'https://lego0821.github.io/lego0821/projects.json', dataType: 'json'})
         .done(function(data){
           console.log(data);
+          List = data;
+          document.getElementById('project').addEventListener('change',function(){
+            document.getElementById('output').textContent = List[this.value][document.getElementById('detail').value];
+          },false)
         })
         .fail(function(){
           window.alert('読み込みエラー');
