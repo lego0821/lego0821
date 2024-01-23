@@ -33,7 +33,7 @@
           },false)
           document.getElementById('detail').addEventListener('change',function(){
             console.log(List[this.value][document.getElementById('detail').value]);
-            document.getElementById('output').textContent = List[this.value][document.getElementById('detail').value];
+            document.getElementById('output').textContent = List[document.getElementById('project').value][this.value];
           },false)
         })
         .fail(function(){
