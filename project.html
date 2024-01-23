@@ -6,7 +6,16 @@
     <link rel='stylesheet' href='https://lego0821.github.io/lego0821/CSS/index.css'>
     <style>
       #thumbnail{
-        
+        width: 1000px;
+        height: 750px;
+      }
+      .button{
+        color: white;
+        padding: 10px 30px;
+        transition: all 0.3s ease;
+      }
+      .button:hover{
+        filter: brightness(1.5);
       }
     </style>
   </head>
@@ -17,7 +26,9 @@
           <li id='navigations'><a href="#" class='navs'>作品</a><a href="#" class='navs'>通知</a></li>
       </ul>
     </nav>
-    <img id='thumbnail'>
+    <div><img id='thumbnail'><input type='button' class='button' style='background-color: #71e861'></div>
+    <h2>使い方</h2>
+    
     <script>
       let url = location.href;
       let projectKey = substr(url.length(),1);
