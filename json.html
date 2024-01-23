@@ -32,7 +32,7 @@
             document.getElementById('output').textContent = List[this.value][document.getElementById('detail').value];
           },false)
           document.getElementById('detail').addEventListener('change',function(){
-            console.log(List[this.value][document.getElementById('detail').value]);
+            console.log(List[document.getElementById('project').value][this.value]);
             document.getElementById('output').textContent = List[document.getElementById('project').value][this.value];
           },false)
         })
