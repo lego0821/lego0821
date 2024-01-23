@@ -31,6 +31,10 @@
             console.log(List[this.value][document.getElementById('detail').value]);
             document.getElementById('output').textContent = List[this.value][document.getElementById('detail').value];
           },false)
+          document.getElementById('detail').addEventListener('change',function(){
+            console.log(List[this.value][document.getElementById('detail').value]);
+            document.getElementById('output').textContent = List[this.value][document.getElementById('detail').value];
+          },false)
         })
         .fail(function(){
           window.alert('読み込みエラー');
