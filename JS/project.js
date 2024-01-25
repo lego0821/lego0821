@@ -23,7 +23,7 @@ $(document).ready(function(){
 function loadProject(){
   switch(projectKey){
     case 0:
-      projectURL = `https://scratch.mit.edu/projects/${AjaxData[1].id}`;
+      projectURL = [`https://scratch.mit.edu/projects/${AjaxData[1].id}`,`https://turbowarp.org/${AjaxData[1].id}`];
       toScratch.
   }
 }
