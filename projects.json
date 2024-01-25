@@ -13,8 +13,8 @@
     "urls": {
       "label" = "第1話は",
       "url" = "https://scratch.mit.edu/projects/666133831",
-      "text" = "こちら";
-      "place" = "before";
+      "text" = "こちら",
+      "place" = "before"
     }
   },
   {
