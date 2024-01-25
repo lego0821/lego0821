@@ -20,10 +20,17 @@ $(document).ready(function(){
   });
 });
 
-function loadProject(){  //  0: オンライン広場;ゲーム
+function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓矢ゲーム;
   switch(projectKey){
     case 0:
       projectURL = [`https://scratch.mit.edu/projects/${AjaxData[0].id}`,`https://turbowarp.org/${AjaxData[0].id}`];
-      toScratch.
+      toScratch.addEventListener('click',function(){
+        console.log(projectURL[0]);
+        location.href = projectURL[0];
+      },false);
+      toTW.addEventListener('click',function(){
+        console.log(projectURL[1]);
+        location.href = projectURL[1];
+      },false);
   }
 }
