@@ -23,8 +23,10 @@ $(document).ready(function(){
 
 function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓矢ゲーム;
   switch(projectKey){
-    case 0:
+    case 0 || '0':
       projectURL = [`https://scratch.mit.edu/projects/${AjaxData[0].id}`,`https://turbowarp.org/${AjaxData[0].id}`];
+      console.log(AjaxData[0].name);
+      document.title = AjaxData[0].name;
       toScratch.addEventListener('click',function(){
         console.log(projectURL[0]);
         location.href = projectURL[0];
@@ -33,6 +35,5 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
         console.log(projectURL[1]);
         location.href = projectURL[1];
       },false);
-      document.title = AjaxData[0].name;
   }
 }
