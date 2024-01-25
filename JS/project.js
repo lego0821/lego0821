@@ -20,10 +20,10 @@ $(document).ready(function(){
   });
 });
 
-function loadProject(){
+function loadProject(){  //  0: オンライン広場;ゲーム
   switch(projectKey){
     case 0:
-      projectURL = [`https://scratch.mit.edu/projects/${AjaxData[1].id}`,`https://turbowarp.org/${AjaxData[1].id}`];
+      projectURL = [`https://scratch.mit.edu/projects/${AjaxData[0].id}`,`https://turbowarp.org/${AjaxData[0].id}`];
       toScratch.
   }
 }
