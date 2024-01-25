@@ -1,6 +1,7 @@
 let url = location.href;
 let projectURL;
-let projectKey = substr(url.length - 1,1);
+let projectKey = url.substr(url.length - 1,1);
+console.log(projectKey);
 let AjaxData;
 
 //  html要素の取得
