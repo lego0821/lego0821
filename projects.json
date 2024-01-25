@@ -11,10 +11,10 @@
     "detail": "スタートから警察官や防犯カメラ、レーザーに見つからないように宝石を盗んでゴールへ行くゲームです。第1話は<a href='https://scratch.mit.edu/projects/666133831'>こちら</a>",
     "HowToUse": "矢印キーで移動、ボタンは非推奨です。"
     "urls": {
-      "label" = "第1話は",
-      "url" = "https://scratch.mit.edu/projects/666133831",
-      "text" = "こちら",
-      "place" = "before"
+      "label": "第1話は",
+      "url": "https://scratch.mit.edu/projects/666133831",
+      "text": "こちら",
+      "place": "before"
     }
   },
   {
