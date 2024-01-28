@@ -9,6 +9,7 @@ const thumbNail = document.getElementById('thumbnail');
 const toScratch = document.getElementById('scr');
 const toTW = document.getElementById('tur');
 const detail = document.getElementById('detail');
+const useing = document.getElementById('useing');
 
 $(document).ready(function(){
   //ファイルの読み込み
@@ -39,5 +40,7 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
       },false);
       thumbnail.src = `https://lego0821.github.io/lego0821/image/${AjaxData[0].name}.png`;
       detail.textContent = AjaxData[0].detail;
+      useing.textContent = AjaxData[0].HowToUse;
+      
   }
 }
