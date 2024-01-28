@@ -6,7 +6,7 @@
   "background_color": "#fff",
   "icons":[
     {
-      "src": "images/maskable_icon.png",
+      "src": "image/maskable_icon.png",
       "sizes": "240x240",
       "type": "image/png"
     }
