@@ -43,7 +43,7 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
       let object = AjaxData[0].HowToUse;
       for(const property in object){
         useing.textContent = object[property];
-        const br = document.creatElement('br');
+        const br = document.createElement('br');
         useing.appentChild(br);
       }
       
