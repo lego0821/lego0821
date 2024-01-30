@@ -40,14 +40,12 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
       },false);
       thumbnail.src = `https://lego0821.github.io/lego0821/image/${AjaxData[0].name}.png`;
       detail.textContent = AjaxData[0].detail;
-      let object = AjaxData[0].HowToUse;
-      for(const property in object){
-        useing.textContent = object[property];
-        console.log(object[property]);
+      AjaxData[0].HowToUse.forEach(function(item){
+        useing.textContent = item;
+        console.log(item);
         const br = document.createElement('br');
         console.log(br);
         useing.appendChild(br);
       }
-      
   }
 }
