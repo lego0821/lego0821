@@ -41,7 +41,7 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
       thumbnail.src = `https://lego0821.github.io/lego0821/image/${AjaxData[0].name}.png`;
       detail.textContent = AjaxData[0].detail;
       AjaxData[0].HowToUse.forEach(function(item){
-        const span = document.creatElement('span');
+        const span = document.createElement('span');
         span.textContent = item;
         useing.appentChild(span);
         console.log(item);
