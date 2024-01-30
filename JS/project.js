@@ -43,6 +43,7 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
       AjaxData[0].HowToUse.forEach(function(item){
         const span = document.createElement('span');
         span.textContent = item;
+        console.log(span);
         useing.appentChild(span);
         console.log(item);
         const br = document.createElement('br');
