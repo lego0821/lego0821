@@ -25,11 +25,9 @@ $(document).ready(function(){
 });
 
 function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓矢ゲーム;
-  switch(projectKey){
-    case 0 || '0':
-      projectURL = [`https://scratch.mit.edu/projects/${AjaxData[0].id}`,`https://turbowarp.org/${AjaxData[0].id}`];
-      console.log(AjaxData[0].name);
-      document.title = AjaxData[0].name;
+      projectURL = [`https://scratch.mit.edu/projects/${AjaxData[projectKey].id}`,`https://turbowarp.org/${AjaxData[projectKey].id}`];
+      console.log(AjaxData[projectKey].name);
+      document.title = AjaxData[projectKey].name;
       toScratch.addEventListener('click',function(){
         console.log(projectURL[0]);
         location.href = projectURL[0];
@@ -38,9 +36,9 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
         console.log(projectURL[1]);
         location.href = projectURL[1];
       },false);
-      thumbnail.src = `https://lego0821.github.io/lego0821/image/${AjaxData[0].name}.png`;
-      detail.textContent = AjaxData[0].detail;
-      AjaxData[0].HowToUse.forEach(function(item){
+      thumbnail.src = `https://lego0821.github.io/lego0821/image/${AjaxData[projectKey].name}.png`;
+      detail.textContent = AjaxData[projectKey].detail;
+      AjaxData[projectKey].HowToUse.forEach(function(item){
         const span = document.createElement('span');
         span.textContent = item;
         console.log(span);
@@ -50,5 +48,5 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
         console.log(br);
         useing.appendChild(br);
       });
+      if(AjaxData[projectKey].)
   }
-}
