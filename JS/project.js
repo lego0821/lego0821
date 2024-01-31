@@ -49,6 +49,6 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
         useing.appendChild(br);
       });
       if(AjaxData[projectKey].urls !== undefined){
-        
+        AjaxData[projectKey].urls.forEach
       }
   }
