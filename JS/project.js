@@ -49,16 +49,17 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
         useing.appendChild(br);
       });
       if(AjaxData[projectKey].urls !== undefined){
-        AjaxData[projectKey].urls.forEach(function(item){
+        AjaxData[projectKey].urls.forEach(function(item,index){
           const block = document.createElement('div');
           const anker = document.createElement('a');
           anker.textContent = item.text;
+          block.textContent = item.label;
           switch(item.place){
             case 'before':
-              block.textContent = `${item.label}${anker}`;
+              block.innerHTML = `${item.label}${anker}`;
               break;
             case 'after':
-              block.textContent = `${anker}${item.label}`;
+              block.innerHTML = `${anker}${item.label}`;
               break;
           }
           document.getElementById('urls').appendChild(block);
