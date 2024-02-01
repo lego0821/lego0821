@@ -57,10 +57,10 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
           block.textContent = item.label;
           switch(item.place){
             case 'before':
-              block.innerHTML = `${item.label}${anker}`;
+              block.innerHTML = `${item.label}<a href="${item.url}">${item.text}</a>`;
               break;
             case 'after':
-              block.innerHTML = `${anker}${item.label}`;
+              block.innerHTML = `<a href="${item.url}">${item.text}</a>${item.label}`;
               break;
           }
           document.getElementById('urls').appendChild(block);
