@@ -10,6 +10,7 @@ const toScratch = document.getElementById('scr');
 const toTW = document.getElementById('tur');
 const detail = document.getElementById('detail');
 const useing = document.getElementById('useing');
+const projectName = document.getElementById('projectName');
 
 $(document).ready(function(){
   //ファイルの読み込み
@@ -38,14 +39,15 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
       },false);
       thumbnail.src = `https://lego0821.github.io/lego0821/image/${AjaxData[projectKey].name}.png`;
       detail.textContent = AjaxData[projectKey].detail;
+      projectName.textContent = AjaxData[projectKey].name;
       AjaxData[projectKey].HowToUse.forEach(function(item){
         const span = document.createElement('span');
         span.textContent = item;
-        console.log(span);
+        //console.log(span);
         useing.appendChild(span);
-        console.log(item);
+        //console.log(item);
         const br = document.createElement('br');
-        console.log(br);
+        //console.log(br);
         useing.appendChild(br);
       });
       if(AjaxData[projectKey].urls !== undefined){
