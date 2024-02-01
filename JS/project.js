@@ -53,6 +53,7 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
           const block = document.createElement('div');
           const anker = document.createElement('a');
           anker.textContent = item.text;
+          anker.href = item.url;
           block.textContent = item.label;
           switch(item.place){
             case 'before':
