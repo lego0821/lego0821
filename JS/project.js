@@ -50,6 +50,14 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
         //console.log(br);
         useing.appendChild(br);
       });
+      if(AjaxData[projectKey].tag !== undefined){
+        AjaxData[projectKey].tag.forEach(function(item,index){
+          const anker = document.createElement('a');
+          anker.textContent = item;
+          anker.href = '#';
+          document.getElementById('tag').appendChild(anker);
+        });
+      }
       if(AjaxData[projectKey].urls !== undefined){
         AjaxData[projectKey].urls.forEach(function(item,index){
           const block = document.createElement('div');
