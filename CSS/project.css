@@ -1,0 +1,46 @@
+nav{
+  z-index: 1;
+}
+#thumbnail{
+  width: 600px;
+  height: 450px;
+}
+.button{
+  z-index: 1;
+  text-align: center;
+  height: 30px;
+  width: 200px;
+  color: white;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.button:hover{
+  filter: brightness(1.5);
+}
+#side{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 750px;
+  text-align: center;
+  background-color: #fffcdb;
+}
+#projectName{
+  height: 50px;
+  font-size: 50px;
+}
+#tag > a{
+  background-color: #9ef5ff5a;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #8ab4f8;
+}
+#urls > a{
+  color: #8ab4f8;
+}
+#tag > a,#urls > a:visited{
+  color: #8ab4f8;
+}
