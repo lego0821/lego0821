@@ -29,7 +29,7 @@ $(document).ready(function(){
 function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓矢ゲーム3: ミニゲーム2;
       projectURL = [`https://scratch.mit.edu/projects/${AjaxData[projectKey].id}`,
                     `https://turbowarp.org/${AjaxData[projectKey].id}`,
-                    `https://lego0821.github.io/lego0821/project`];
+                    `https://lego0821.github.io/projects/${AjaxData[projectKey].id}`];
       console.log(AjaxData[projectKey].name);
       document.title = AjaxData[projectKey].name;
 
