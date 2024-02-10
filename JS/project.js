@@ -8,6 +8,7 @@ let AjaxData;
 const thumbNail = document.getElementById('thumbnail');
 const toScratch = document.getElementById('scr');
 const toTW = document.getElementById('tur');
+const JSopen = document.getElementById('js');
 const detail = document.getElementById('detail');
 const useing = document.getElementById('useing');
 const projectName = document.getElementById('projectName');
@@ -25,18 +26,38 @@ $(document).ready(function(){
   });
 });
 
-function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓矢ゲーム;
-      projectURL = [`https://scratch.mit.edu/projects/${AjaxData[projectKey].id}`,`https://turbowarp.org/${AjaxData[projectKey].id}`];
+function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓矢ゲーム3: ミニゲーム2;
+      projectURL = [`https://scratch.mit.edu/projects/${AjaxData[projectKey].id}`,
+                    `https://turbowarp.org/${AjaxData[projectKey].id}`,
+                    `https://lego0821.github.io/lego0821/project`];
       console.log(AjaxData[projectKey].name);
       document.title = AjaxData[projectKey].name;
-      toScratch.addEventListener('click',function(){
-        console.log(projectURL[0]);
-        location.href = projectURL[0];
-      },false);
-      toTW.addEventListener('click',function(){
-        console.log(projectURL[1]);
-        location.href = projectURL[1];
-      },false);
+
+      if(AjaxData[projectKey].type === 'scratch'){
+        document.getElementById('open2').style.display = 'none';
+
+        //  各ボタンへのリンクの割り当て
+        
+        toScratch.addEventListener('click',function(){
+          console.log(projectURL[0]);
+          location.href = projectURL[0];
+        },false);
+        
+        toTW.addEventListener('click',function(){
+          console.log(projectURL[1]);
+          location.href = projectURL[1];
+        },false);
+        
+      } else if(AjaxData[projectKey].type === 'JS'){
+        document.getElementById('open1').style.display = 'none';
+        JSopen.addEventListener('click',function(){
+          console.log(projectURL[3]);
+          location.href = projectURL[3];
+        },false);
+      }
+      
+      
+  
       thumbnail.src = `https://lego0821.github.io/lego0821/image/${AjaxData[projectKey].name}.png`;
       detail.textContent = AjaxData[projectKey].detail;
       projectName.textContent = AjaxData[projectKey].name;
@@ -79,4 +100,5 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
           document.getElementById('urls').appendChild(block);
         });
       }
+
   }
