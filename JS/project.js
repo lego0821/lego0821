@@ -51,8 +51,8 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
       } else if(AjaxData[projectKey].type === 'JS'){
         document.getElementById('open1').style.display = 'none';
         JSopen.addEventListener('click',function(){
-          console.log(projectURL[3]);
-          location.href = projectURL[3];
+          console.log(projectURL[2]);
+          location.href = projectURL[2];
         },false);
       }
       
