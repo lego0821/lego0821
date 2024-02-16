@@ -1,1 +1,14 @@
-
+[
+  {
+    "title": "お知らせページ追加",
+    "date": {
+      "year": "2024",
+      "month": "02",
+      "day": "16"
+    },
+    "detail":[
+      "「お知らせ」のページを追加しました。",
+      "<a href='https://lego0821.github.io/lego0821/notification'>→こちら</a>"
+    ]
+  },
+]
