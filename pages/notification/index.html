@@ -19,7 +19,7 @@
                 opacity: 0;
                 z-index: -1;
             }
-            .notiTable td:nth-of-type(1){
+            .notiTable tr:nth-of-type(1){
                 background-color: #eee;
             }
             .notification small{
@@ -34,6 +34,10 @@
             }
             .important{
                 color: red;
+            }
+            .important::before{
+                content: url(triangle-exclamation.svg);
+                display: inline-block;
             }
         </style>
     </head>
@@ -60,6 +64,9 @@
                 </table>
             </div>
         </div>
+
+        <br>
+        
         <div id='container'>
             <div class='notification'>
                 <table class='notiTable'>
