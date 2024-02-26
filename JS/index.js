@@ -18,7 +18,7 @@ window.addEventListener('scroll',function(){
 window.addEventListner('load',() => {
   const notiIndex = Cookies.get('notification');
   if(Number(notiIndex) < 2){
-    document.querySelectorAll('#navigations li')[2].style.color = '#f55';
+    document.querySelectorAll('#navigations li')[1].style.color = '#f55';
   }
   if(location.href === 'https://lego0821.github.io/lego0821/pages/notification/'){
     Cookies.set('notification',2,{expires: 30});
