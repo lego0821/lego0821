@@ -15,7 +15,7 @@ window.addEventListener('scroll',function(){
   }
 });
 
-window.addEventListner('load',function(){
+window.addEventListener('load',function(){
   const notiIndex = Cookies.get('notification');
   if(Number(notiIndex) < 2){
     document.querySelectorAll('#navigations li')[1].style.color = '#f55';
