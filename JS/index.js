@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',function(){
   const cookieScript = document.createElement('script');
   cookieScript.src = 'https://github.com/js-cookie/js-cookie/releases/download/v2.0.2/js.cookie-2.0.2.min.js';
-  document.body.InsertAdjacentHTML('afterbegin',String(cookieScript));
+  document.body.insertAdjacentHTML('afterbegin',String(cookieScript));
 });
 window.addEventListener('scroll',function(){
   const elm = document.getElementById('top');
