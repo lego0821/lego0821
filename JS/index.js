@@ -19,7 +19,7 @@ window.addEventListener('load',function(){
   const notiIndex = Cookies.get('notification');
   if(Number(notiIndex) < 2 || notiIndex === undefined || notiIndex === null){
     document.querySelectorAll('li a')[2].style.color = '#fcb6aa';
-    document.querySelectorAll('li a')[2].class = 'navs dot';
+    document.querySelectorAll('li a')[2].className = 'navs dot';
   }
   if(location.href === 'https://lego0821.github.io/lego0821/pages/notification/'){
     Cookies.set('notification',2,{expires: 30});
