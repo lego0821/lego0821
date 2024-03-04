@@ -91,10 +91,14 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
 }
-.dot::before{
+.dot::before {
+    content: '';
     display: inline-block;
-    width: 0.75em;
-    height: 0.75em;
+    width: 0.5em;
+    height: 0.5em;
     background-color: #fcb6aa;
     border-radius: 100%;
+    z-index: 100;
+    vertical-align: middle;
+    margin: -12.5px -5px auto auto;
 }
