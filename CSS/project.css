@@ -10,11 +10,13 @@ nav{
   text-align: center;
   height: 30px;
   width: 200px;
-  color: white;
+  color: #fff;
   transition: all 0.3s ease;
   text-decoration: none;
   border: none;
   cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
 }
 .button:hover{
   filter: brightness(1.5);
