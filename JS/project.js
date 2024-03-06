@@ -38,22 +38,13 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
 
         //  各ボタンへのリンクの割り当て
         
-        toScratch.addEventListener('click',function(){
-          console.log(projectURL[0]);
-          location.href = projectURL[0];
-        },false);
+        toScratch.href = projectURL[0];
         
-        toTW.addEventListener('click',function(){
-          console.log(projectURL[1]);
-          location.href = projectURL[1];
-        },false);
+        toTW.href = projectURL[1];
         
       } else if(AjaxData[projectKey].type === 'JS'){
         document.getElementById('open1').style.display = 'none';
-        JSopen.addEventListener('click',function(){
-          console.log(projectURL[2]);
-          location.href = projectURL[2];
-        },false);
+        JSopen.href = projectURL[2];
       }
       
       
