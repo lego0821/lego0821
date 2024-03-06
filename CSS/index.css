@@ -103,7 +103,7 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     z-index: 10;
     vertical-align: middle;
-    margin: -12.5px -5px auto auto;
+    margin: 0 0 auto auto;
 }
 @keyframes expansion {
     from{
