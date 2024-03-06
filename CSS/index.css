@@ -63,7 +63,7 @@ a.navs{
 a{
     color: blue;
 }
-a:visited{
+a:visited:not(.button,.navs){
     color: blue;
 }
 #top{
