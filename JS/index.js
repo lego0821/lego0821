@@ -2,6 +2,10 @@ document.addEventListener('DOMContentLoaded',function(){
   const cookieScript = document.createElement('script');
   cookieScript.src = 'https://github.com/js-cookie/js-cookie/releases/download/v2.0.2/js.cookie-2.0.2.min.js';
   document.body.prepend(cookieScript);
+  const fontAwesome = document.createElement('script');
+  fontAwesome.src = 'https://kit.fontawesome.com/99b9e4fa5f.js';
+  fontAwesome.crossorigin = 'anonymous';
+  document.head.appendChild(anonymous);
 });
 window.addEventListener('scroll',function(){
   const elm = document.getElementById('top');
