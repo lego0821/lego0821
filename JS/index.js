@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded',function(){
 
   const navigationIcon = document.createElement('li');
   const settingIcon = document.createElement('a');
-  settingIcon.className = 'fa-solid fa-gear';
+  settingIcon.className = 'fa-solid fa-gear whiteURL';
   navigationIcon.appendChild(settingIcon);
   navigationIcon.style.float = 'right';
   navigationIcon.style.color = 'white';
   navigationIcon.style.marginLeft = 'auto';
   navigationIcon.style.cursor = 'pointer';
-  navigationIcon.className = 'navs whiteURL';
+  navigationIcon.className = 'navs';
   document.querySelector('nav ul').appendChild(navigationIcon);
 });
 window.addEventListener('scroll',function(){
