@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded',function(){
   navigationIcon.style.color = 'white';
   navigationIcon.style.marginLeft = 'auto';
   navigationIcon.style.cursor = 'pointer';
-  navigationIcon.className = 'navs';
+  navigationIcon.className = 'navs whiteURL';
   document.querySelector('nav ul').appendChild(navigationIcon);
 });
 window.addEventListener('scroll',function(){
