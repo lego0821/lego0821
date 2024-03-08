@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded',function(){
   settingIcon.className = 'fa-solid fa-gear';
   navigationIcon.appendChild(settingIcon);
   navigationIcon.style.float = 'right';
+  navigationIcon.style.color = 'white';
   navigationIcon.className = 'navs';
   document.querySelector('nav ul').appendChild(navigationIcon);
 });
