@@ -8,11 +8,12 @@ document.addEventListener('DOMContentLoaded',function(){
   fontAwesome.crossorigin = 'anonymous';
   document.head.appendChild(fontAwesome);
 
-  const navigationIcon = document.createElement('div');
+  const navigationIcon = document.createElement('li');
   const settingIcon = document.createElement('a');
   settingIcon.className = 'fa-solid fa-gear';
   navigationIcon.appendChild(settingIcon);
-  document.querySelector('nav').appendChild(navigationIcon);
+  navigationIcon.style.float = 'right';
+  document.querySelector('nav ul').appendChild(navigationIcon);
 });
 window.addEventListener('scroll',function(){
   const elm = document.getElementById('top');
