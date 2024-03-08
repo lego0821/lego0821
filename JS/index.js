@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded',function(){
   const navigationIcon = document.createElement('li');
   const settingIcon = document.createElement('a');
   settingIcon.className = 'fa-solid fa-gear whiteURL';
+  settingIcon.href = 'https://lego0821.github.io/lego0821/pages/setting/';
   navigationIcon.appendChild(settingIcon);
   navigationIcon.style.float = 'right';
   navigationIcon.style.color = 'white';
