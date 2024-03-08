@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded',function(){
   navigationIcon.appendChild(settingIcon);
   navigationIcon.style.float = 'right';
   navigationIcon.style.color = 'white';
+  navigationIcon.style.cursor = 'pointer';
   navigationIcon.className = 'navs';
   document.querySelector('nav ul').appendChild(navigationIcon);
 });
