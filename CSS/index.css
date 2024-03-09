@@ -58,7 +58,10 @@ a.navs:visited{
     color: white;
 }
 a.navs{
-    text-decorations: none;
+    text-decoration: none;
+}
+navs a{
+    text-decoration: none;
 }
 a{
     color: blue;
