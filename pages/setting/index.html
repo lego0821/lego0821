@@ -58,8 +58,8 @@
         document.getElementById('deleteCookie').addEventListener('click',() => {
             Cookies.remove('notification');
         },false);
-        document.getElementById('cookieAgree').addEventListener('change',() => {
-            if(this.value === 'no'){
+        document.getElementById('cookieAgree').addEventListener('change',(e) => {
+            if(e.target.value === 'no'){
                 Cookies.remove('notification');
             }
         },false);
