@@ -31,10 +31,15 @@ window.addEventListener('scroll',function(){
     elm.style.zIndex = '-1';
   }
 });
+window.addEventListener('load',async function(){
+  const response = fetch('https://lego0821.github.io/lego0821/pages/notification.json');
+  console.log(response.ok);
+  console.log(response.json());
+},false);
 
 window.addEventListener('load',function(){
   const notiIndex = Cookies.get('notification');
-  if((Number(notiIndex) < 2 || notiIndex === undefined || notiIndex === null) && (!location.href === 'https://lego0821.github.io/lego0821/pages/notification/')){
+  if((Number(notiIndex) < 3 || notiIndex === undefined || notiIndex === null) && (!location.href === 'https://lego0821.github.io/lego0821/pages/notification/')){
     document.querySelectorAll('li a')[2].className = 'navs dot';
   }
   if(location.href === 'https://lego0821.github.io/lego0821/pages/notification/'){
