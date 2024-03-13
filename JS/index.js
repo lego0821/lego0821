@@ -32,7 +32,7 @@ window.addEventListener('scroll',function(){
   }
 });
 window.addEventListener('load',async function(){
-  const response = await fetch('https://lego0821.github.io/lego0821/pages/notification.json');
+  const response = await fetch('https://lego0821.github.io/lego0821/notification.json');
   console.log(response.ok);
   const ResponseData = await response.json();
   console.log(ResponseData);
