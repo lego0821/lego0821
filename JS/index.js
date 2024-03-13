@@ -32,9 +32,10 @@ window.addEventListener('scroll',function(){
   }
 });
 window.addEventListener('load',async function(){
-  const response = fetch('https://lego0821.github.io/lego0821/pages/notification.json');
+  const response = await fetch('https://lego0821.github.io/lego0821/pages/notification.json');
   console.log(response.ok);
-  console.log(response.json());
+  const ResponseData = await response.json();
+  console.log(ResponseData);
 },false);
 
 window.addEventListener('load',function(){
