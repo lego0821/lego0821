@@ -31,12 +31,13 @@ window.addEventListener('scroll',function(){
     elm.style.zIndex = '-1';
   }
 });
-window.addEventListener('load',async function loadJson(){
+(async function loadJson(){
   const response = await fetch('https://lego0821.github.io/lego0821/notification.json');
   console.log(response.ok);
   const ResponseData = await response.json();
   console.log(ResponseData);
-},false);
+});
+window.addEventListener('load',loadJson(),false);
 
 window.addEventListener('load',function(){
   const notiIndex = Cookies.get('notification');
