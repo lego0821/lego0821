@@ -50,19 +50,26 @@
           <h3>Cookieの削除</h3>
           <button id='deleteCookie'>削除</button>
         </div>
+        <div class='options'>
+          <h3>サイト内のページにアクセス</h3>
+          <label for='jumpToURL'>https://lego0821.github.io/lego0821/</label><input id='jumpToURL'><button id='jump'>アクセス</button>
+        </div>
         <a href='#' class='animation' id='top'>
             ▲TOP
         </a>
         <script src='https://lego0821.github.io/lego0821/JS/index.js'></script>
         <script>
-        document.getElementById('deleteCookie').addEventListener('click',() => {
-            Cookies.remove('notification');
-        },false);
-        document.getElementById('cookieAgree').addEventListener('change',(e) => {
-            if(e.target.value === 'no'){
+            document.getElementById('deleteCookie').addEventListener('click',() => {
                 Cookies.remove('notification');
-            }
-        },false);
+            },false);
+            document.getElementById('cookieAgree').addEventListener('change',(e) => {
+                if(e.target.value === 'no'){
+                    Cookies.remove('notification');
+                }
+            },false);
+            document.getElementById('jump').addEventListener('click',() => {
+                location.href = `https://lego0821.github.io/lego0821/${document.getElementById('jumpToURL').value}`;
+            });
         </script>
     </body>
 </html>
