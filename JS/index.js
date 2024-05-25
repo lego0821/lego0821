@@ -40,7 +40,7 @@ window.addEventListener('load',async function(){
 
 window.addEventListener('load',function(){
   const notiIndex = Cookies.get('notification');
-  if((Number(notiIndex) < 4 || notiIndex === undefined || notiIndex === null) && (!location.href === 'https://lego0821.github.io/lego0821/pages/notification/')){
+  if((Number(notiIndex) < 4 || notiIndex === undefined || notiIndex === null) && !(location.href === 'https://lego0821.github.io/lego0821/pages/notification/')){
     document.querySelectorAll('li a')[2].className = 'navs dot';
   }
   if(location.href === 'https://lego0821.github.io/lego0821/pages/notification/'){
