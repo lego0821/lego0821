@@ -44,6 +44,6 @@ window.addEventListener('load',function(){
     document.querySelectorAll('li a')[2].className = 'navs dot';
   }
   if(location.href === 'https://lego0821.github.io/lego0821/pages/notification/'){
-    Cookies.set('notification',2,{expires: 30});
+    Cookies.set('notification',4,{expires: 30});
   }
 });
