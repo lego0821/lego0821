@@ -67,8 +67,14 @@
                     Cookies.remove('notification');
                 }
             },false);
-            document.getElementById('jump').addEventListener('click',() => {
+            function JTU(){
                 location.href = `https://lego0821.github.io/lego0821/${document.getElementById('jumpToURL').value}`;
+            }
+            document.getElementById('jump').addEventListener('click',JTU);
+            document.getElementById('jumpTOURL').addEventListener('keyDown',(e) => {
+                if(e.key === 'Enter'){
+                    JTU();
+                }
             });
         </script>
     </body>
