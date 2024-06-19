@@ -73,7 +73,7 @@ function loadProject(){  //  0: オンライン広場;1: 怪盗ゲーム;2: 弓�
       if(AjaxData[projectKey].urls !== undefined){
         const h2 = document.createElement('h2');
         h2.textContent = 'リンク';
-        document.body.appendChild(h2);
+        document.getElementById('urls').appendChild(h2);
         AjaxData[projectKey].urls.forEach(function(item,index){
           const block = document.createElement('div');
           const anker = document.createElement('a');
