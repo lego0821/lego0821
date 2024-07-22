@@ -2,7 +2,7 @@ nav{
   z-index: 1;
 }
 #thumbnail{
-  width: min(90% - 350px,600px);
+  width: min(90% - 310px,600px);
 }
 .button{
   z-index: 1;
@@ -32,6 +32,7 @@ nav{
 #projectName{
   height: 50px;
   font-size: 50px;
+  width: min(90% - 310px,600px);
 }
 #tag > a{
   background-color: #9ef5ff5a;
