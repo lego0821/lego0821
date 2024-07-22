@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='ja'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="lego0821のアカウントです。">
+        <link rel="stylesheet" href="https://lego0821.github.io/lego0821/CSS/index.css">
+        <link rel='stylesheet' href='https://lego0821.github.io/lego0821/CSS/production_card.css'>
+        <link rel='shortcut icon' href='https://lego0821.github.io/lego0821/image/lego0821.png'>
+        <link rel='manifest' href='manifest.json'>
+        <title>lego0821</title>
+        <style>
+            #myName{
+                line-height: 50px;
+                font-size: 50px;
+                color: black;
+            }
+            #myName::before{
+                content: url(https://lego0821.github.io/lego0821/image/lego0821.png);
+                vertical-align: text-top;
+            }
+            h1,h2,h3,h4,h5,h6{
+                font-weight: normal;
+                margin: 0;
+                padding: 0;
+            }
+            #top{
+                opacity: 0;
+                z-index: -1;
+            }
+            .over_scr{
+                width: 100%;
+                overflow-x: scroll;
+                height: 400px;
+                white-space: nowrap;
+                border-radius: 10px;
+                border: 2px solid gray;
+            }
+            footer{
+                background-color: #aaa;
+                min-height: 100px;
+                text-align: center;
+              }
+              footer p{
+                color: white;
+              }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="https://lego0821.github.io/lego0821/lego0821" class="logo,navs"><img src="https://lego0821.github.io/lego0821/image/lego0821.png" class="logoImg" title="トップへ"></a></li>
+                <li id='navigations'><a href="https://lego0821.github.io/lego0821/pages/productions/" class='navs'>作品</a><a href="https://lego0821.github.io/lego0821/pages/notification/" class='navs'>通知</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Javascriptで作った作品</h1>
+            <div class='card'>
+                <a href='https://lego0821.github.io/lego0821/pages/project/#5'>
+                <img src='https://lego0821.github.io/lego0821/image/大戦争ゲーム.png' alt='大戦争ゲーム'>
+                <br>
+                大戦争ゲーム</a>
+                <p class='detail'>味方を召喚して敵城を攻撃するゲームです。</p>
+            </div>
+            <div class='card'>
+                <a href='https://lego0821.github.io/lego0821/pages/project/#3'>
+                <img src='https://lego0821.github.io/lego0821/image/ミニゲーム2.png' alt='ミニゲーム2'>
+                <br>
+                ミニゲーム2</a>
+                <p class='detail'>敵をよけて進み、高得点を目指しましょう。</p>
+            </div>
+            
+            
+        <a href='#' class='animation' id='top'>
+            ▲TOP
+        </a>
+        <footer>
+            <br>
+            <br>
+            <p>このサイトの評価をお願いします <a href='https://docs.google.com/forms/d/e/1FAIpQLSfwAHv_0zoKf2OBtWwlTffRDzoQpNm24L4KJAlLfPXanwpV5Q/viewform?usp=sf_link'>評価</a></p>
+        </footer>
+        <script src='https://lego0821.github.io/lego0821/JS/index.js'></script>
+    </body>
+</html>
