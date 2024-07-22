@@ -2,8 +2,7 @@ nav{
   z-index: 1;
 }
 #thumbnail{
-  width: 600px;
-  height: 450px;
+  width: min(80%,600px);
 }
 .button{
   z-index: 1;
